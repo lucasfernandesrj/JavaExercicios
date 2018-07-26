@@ -1,7 +1,6 @@
 package com.lucasfernandes.cursojava.aula21;
 
 public class ForEach2 {
-
 	public static void main(String[] args) {
 		double[][] notasAlunos = new double[3][4];
 		notasAlunos[0][0]=4;
@@ -25,7 +24,5 @@ public class ForEach2 {
 			}
 			System.out.println();
 		}
-		
 	}
-
 }
