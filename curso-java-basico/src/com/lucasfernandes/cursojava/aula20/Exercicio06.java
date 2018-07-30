@@ -113,6 +113,7 @@ public class Exercicio06 {
 		if(venceu == false) {
 			System.out.println("Velha! O jogo terminou empatado!");
 		}
+		scan.close();
 	}
 
 }

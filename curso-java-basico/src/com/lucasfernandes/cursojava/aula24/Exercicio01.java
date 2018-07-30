@@ -6,8 +6,6 @@ public class Exercicio01 {
 		// TODO Auto-generated method stub
 		Lampada l = new Lampada();
 		
-		l.adicionarPreco(20.55);
-		l.mostrarPreco();
 	}
 
 }
