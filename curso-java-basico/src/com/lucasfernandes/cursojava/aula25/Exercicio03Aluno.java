@@ -1,9 +1,9 @@
 package com.lucasfernandes.cursojava.aula25;
 
 public class Exercicio03Aluno {
-	String nome;
-	double matricula;
-	String curso;
+	public String nome;
+	private double matricula;
+	protected String curso;
 	String[] disciplina = new String[3];
 	double[] notas = new double[3];
 	

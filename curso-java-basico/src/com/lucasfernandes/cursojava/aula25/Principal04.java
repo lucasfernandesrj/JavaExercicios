@@ -6,7 +6,7 @@ public class Principal04 {
 		System.out.println("Jogo da Velha - Tabuleiro:  ");
 		Exercicio04JogoDaVelha e1 = new Exercicio04JogoDaVelha();
 		e1.iniciarJogo();
-			while(e1.venceu != true) {
+			while(!e1.venceu) {
 				e1.jogarRodada();
 			}
 		

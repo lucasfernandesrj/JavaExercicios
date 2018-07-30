@@ -2,13 +2,28 @@ package com.lucasfernandes.cursojava.aula25;
 
 public class Exercicio01Lampada {
 	boolean luz = false;
+	boolean conectado = false;
 	
 	public void ligarLampada() {
-		luz = true;
+		if(conectado) {
+			luz = true;
+			
+		}
 	}
 	
 	public void desligarLampada() {
-		luz = false;
+		if(conectado) {
+			luz = false;
+		}
 	}
-
+	
+	public void ligarTomada() {
+		conectado = true;
+	}
+	
+	public void desligarTomada() {
+		if(!luz) {
+			conectado = false;
+		}
+	}
 }

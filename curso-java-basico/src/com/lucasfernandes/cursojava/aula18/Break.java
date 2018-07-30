@@ -16,6 +16,7 @@ public class Break {
 				break;
 			}
 		}
+		scan.close();
 	}
 
 }

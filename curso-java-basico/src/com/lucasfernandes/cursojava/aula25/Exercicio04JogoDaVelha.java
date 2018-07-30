@@ -18,6 +18,7 @@ public class Exercicio04JogoDaVelha {
 					jogoVelha[i][j] = '#';
 				}
 			}
+			mostrarJogo();
 		}
 		public void mostrarJogo() {
 			for(int i=0;i<jogoVelha.length;i++) {

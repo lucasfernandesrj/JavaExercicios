@@ -4,13 +4,24 @@ public class Exercicio02ContaCorrente {
 	int numero;
 	double saldo;
 	boolean especial = false;
-	double limite;
+	double especialUsado = 0;
+	double especialLimite;
 	
-	public void realizarSaque(double valor) {
+	public boolean realizarSaque(double valor) {
 		if(saldo <= valor || valor > 0) {
 			saldo-=valor;
-		}else {
-			System.out.println("Valor de saque inválido!");
+			return true;
+		}else if(especial){
+			if((saldo + especialLimite) <= valor) {
+				valor -= saldo;
+				saldo = 0;
+				especialLimite -= valor;
+				return true;
+			}else {
+				return false;
+			}
+		}else{
+			return false;
 		}
 	}
 	
@@ -23,8 +34,8 @@ public class Exercicio02ContaCorrente {
 	}
 	
 	public void verificarClienteEspecial() {
-		if(especial) {
-			System.out.println("Cheque Especial - Limite: "+limite);
+		if(especial || saldo == 0) {
+			System.out.println("Cheque Especial - Limite: "+especialLimite);
 		}else {
 			System.out.println("Não está usando o Cheque Especial!");
 		}
