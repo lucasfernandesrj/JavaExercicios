@@ -12,6 +12,7 @@ public class Exercicio06 {
 		System.out.println(ConversaoDeUnidadesDeTempo.converterSemanaParaDia(num1));
 		System.out.println(ConversaoDeUnidadesDeTempo.converterMesParaDia(num1));
 		System.out.println(ConversaoDeUnidadesDeTempo.converterAnoParaDia(num1));
+		
 	}
 
 }
