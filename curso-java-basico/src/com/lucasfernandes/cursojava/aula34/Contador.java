@@ -8,19 +8,23 @@ public class Contador {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public int getContador() {
+	private static int getContador() {
 		return contador;
 	}
 	
-	public void setContador(int contador) {
+	public static void setContador(int contador) {
 		Contador.contador = contador;
 	}
 	
-	public void zerarContador() {
+	public static void zerarContador() {
 		contador = 0;
 	}
 	
-	public void incrementarContador() {
+	public static void incrementarContador() {
 		contador++;
+	}
+	
+	public static void mostrarContador() {
+		System.out.println(Contador.getContador());
 	}
 }

@@ -3,23 +3,18 @@ package com.lucasfernandes.cursojava.aula34;
 public class Exercicio01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Contador con = new Contador();
 		
-		System.out.println(con.getContador());
+		Contador.mostrarContador();
 		
-		con.incrementarContador();
-		System.out.println(con.getContador());
+		Contador.incrementarContador();
+		Contador.mostrarContador();
 		
-		con.zerarContador();
-		System.out.println(con.getContador());
+		Contador.zerarContador();
+		Contador.mostrarContador();
 		
-		con.setContador(5);
-		System.out.println(con.getContador());
+		Contador.setContador(5);
+		Contador.mostrarContador();
 		
-		Contador con2 = new Contador();
-		System.out.println(con2.getContador());
-		System.out.println(con.getContador());
 	}
 
 }

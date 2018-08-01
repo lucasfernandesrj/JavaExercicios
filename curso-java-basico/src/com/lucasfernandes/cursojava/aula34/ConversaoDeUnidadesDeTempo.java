@@ -4,7 +4,7 @@ public class ConversaoDeUnidadesDeTempo {
 	public static double converterMinutoParaSegundo(double num1) {
 		return num1*60;
 	}
-	
+
 	public static double converterHoraParaMinutos(double num1) {
 		return num1*60;
 	}
@@ -24,4 +24,5 @@ public class ConversaoDeUnidadesDeTempo {
 	public static double converterAnoParaDia(double num1) {
 		return num1*365.25;
 	}
+	
 }
