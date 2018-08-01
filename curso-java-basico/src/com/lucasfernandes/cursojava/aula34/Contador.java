@@ -5,7 +5,6 @@ public class Contador {
 	
 	public Contador() {
 		contador ++;
-		// TODO Auto-generated constructor stub
 	}
 	
 	private static int getContador() {
