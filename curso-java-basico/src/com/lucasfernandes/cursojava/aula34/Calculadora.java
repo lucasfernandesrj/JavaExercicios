@@ -27,10 +27,14 @@ public class Calculadora {
 	}
 	
 	public static double fatorial(double num1) {
-		double limite = num1;
-		for(int i = 1;i < limite;i++) {
-			num1 *= i;
+		if(num1 == 0) {
+			return 1;
+		}else {
+			double limite = num1;
+			for(int i = 1;i < limite;i++) {
+				num1 *= i;
+			}
+			return num1;
 		}
-		return num1;
 	}
 }
