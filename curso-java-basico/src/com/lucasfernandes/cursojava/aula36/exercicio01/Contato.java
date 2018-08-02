@@ -1,15 +1,15 @@
 package com.lucasfernandes.cursojava.aula36.exercicio01;
 
 public class Contato {
-	private String nomeContato;
+	private String nome;
 	private String telefone;
 	private String email;
 	
 	public String getNomeContato() {
-		return nomeContato;
+		return nome;
 	}
 	public void setNomeContato(String nomeContato) {
-		this.nomeContato = nomeContato;
+		this.nome = nomeContato;
 	}
 	public String getTelefone() {
 		return telefone;
