@@ -35,6 +35,7 @@ public class Principal {
 			alunos[i]=aluno;
 		}
 		double mediaTotal = somaMediaTotal/4;
+		
 		curso.setProfessor(professor);
 		curso.setAluno(alunos);
 		

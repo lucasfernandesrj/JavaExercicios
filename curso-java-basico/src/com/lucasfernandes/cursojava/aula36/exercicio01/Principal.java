@@ -10,32 +10,25 @@ public class Principal {
 		Agenda a1 = new Agenda();
 		
 		System.out.print("Infome o nome do grupo da Agenda: ");
-		a1.setNomeAgenda(scan.nextLine());
+		a1.setNome(scan.nextLine());
 		
 		Contato[] contatos = new Contato[3];
 		for(int i = 0;i<contatos.length;i++) {
+			System.out.println("Informações do contato "+(i+1)+": ");
 			Contato contato = new Contato();
-			System.out.print("Informe o nome do contato "+(i+1)+": ");
-			contato.setNomeContato(scan.nextLine());
-			System.out.print("Informe o email do contato "+(i+1)+": ");
+			System.out.print("Informe o nome: ");
+			contato.setNome(scan.nextLine());
+			System.out.print("Informe o email: ");
 			contato.setEmail(scan.nextLine());
-			System.out.print("Informe o telefone do contato "+(i+1)+": ");
+			System.out.print("Informe o telefone: ");
 			contato.setTelefone(scan.nextLine());
 			contatos[i]=contato;
 			System.out.println();
 		}
 		a1.setContato(contatos);
 		
-		System.out.println("Nome do grupo: "+a1.getNomeAgenda());
-		
-		if(a1 != null && a1.getContato() != null) {
-			for(Contato cont : contatos) {
-				System.out.println("Nome: "+cont.getNomeContato());
-				System.out.println("Email: "+cont.getEmail());
-				System.out.println("Telefone: "+cont.getTelefone());
-				System.out.println();
-			}
-		}
+		System.out.println(a1.mostrarInfo());
+
 		scan.close();
 		scanInt.close();
 	}

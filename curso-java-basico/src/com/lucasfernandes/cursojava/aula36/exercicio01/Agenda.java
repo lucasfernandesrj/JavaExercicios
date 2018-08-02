@@ -1,19 +1,29 @@
 package com.lucasfernandes.cursojava.aula36.exercicio01;
 
 public class Agenda {
-	private String nomeAgenda;
-	private Contato[] contato;
+	private String nome;
+	private Contato[] contatos;
 	
-	public String getNomeAgenda() {
-		return nomeAgenda;
+	public String getNome() {
+		return nome;
 	}
-	public void setNomeAgenda(String nomeAgenda) {
-		this.nomeAgenda = nomeAgenda;
+	public void setNome(String nomeAgenda) {
+		this.nome = nomeAgenda;
 	}
 	public Contato[] getContato() {
-		return contato;
+		return contatos;
 	}
 	public void setContato(Contato[] contato) {
-		this.contato = contato;
+		this.contatos = contato;
+	}
+	
+	public String mostrarInfo() {
+		String info = "Nome: "+getNome()+" \n";
+		if(contatos != null) {
+			for(Contato c : contatos) {
+				info += c.mostrarInfo() + "\n";
+			}
+		}
+		return info;
 	}
 }

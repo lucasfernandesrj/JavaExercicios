@@ -5,10 +5,10 @@ public class Contato {
 	private String telefone;
 	private String email;
 	
-	public String getNomeContato() {
+	public String getNome() {
 		return nome;
 	}
-	public void setNomeContato(String nomeContato) {
+	public void setNome(String nomeContato) {
 		this.nome = nomeContato;
 	}
 	public String getTelefone() {
@@ -22,5 +22,11 @@ public class Contato {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String mostrarInfo() {
+		return "Nome: "+this.getNome()
+			+" Telefone: "+this.getTelefone()
+			+" Email: "+this.getEmail();
 	}
 }
