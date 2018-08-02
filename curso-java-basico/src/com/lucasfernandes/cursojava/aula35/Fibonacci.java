@@ -14,7 +14,6 @@ public class Fibonacci {
 		return resultado;
 	}
 	
-	
 	public static int buscaIterativa(int num1) {
 		if(num1 < 2) {
 			return num1;
