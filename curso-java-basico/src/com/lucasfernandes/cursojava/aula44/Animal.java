@@ -1,4 +1,4 @@
-package com.lucasfernandes.cursojava.aula44.teste;
+package com.lucasfernandes.cursojava.aula44;
 
 public abstract class Animal {
 	private String nome;

@@ -1,6 +1,6 @@
-package com.lucasfernandes.cursojava.aula44.teste;
+package com.lucasfernandes.cursojava.aula44;
 
-public class Cavalo extends Mamifero implements AnimalDomesticado {
+public class Gato extends Mamifero implements AnimalEstimacao,AnimalDomesticado {
 
 	@Override
 	public String amamentar() {
@@ -28,6 +28,18 @@ public class Cavalo extends Mamifero implements AnimalDomesticado {
 
 	@Override
 	public void chamarVeterinario() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void brincar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void levarPassear() {
 		// TODO Auto-generated method stub
 		
 	}

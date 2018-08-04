@@ -1,4 +1,4 @@
-package com.lucasfernandes.cursojava.aula44.teste;
+package com.lucasfernandes.cursojava.aula44;
 
 public interface AnimalEstimacao {
 	//public abstract void brincar();
