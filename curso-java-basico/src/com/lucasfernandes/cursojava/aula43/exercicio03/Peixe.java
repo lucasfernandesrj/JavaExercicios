@@ -18,7 +18,16 @@ public class Peixe extends Animal {
 		this.caracteristicas = caracteristicas;
 	}
 	public String toString() {
+<<<<<<< HEAD
 		return super.toString()
+=======
+		return "Animal: "+this.getNome()
+				+"\nComprimento: "+this.getComprimento()+" cm"
+				+"\nPatas: "+this.getPatas()
+				+"\nCor: "+this.getCor()
+				+"\nAmbiente: "+this.getAmbiente()
+				+"\nVelocidade: "+this.getVelocidade()+" m/s"
+>>>>>>> branch 'master' of https://github.com/lucasfernandesrj/JavaExercicios.git
 				+"\nCaracterística: "+this.getCaracteristicas();
 	}
 }
