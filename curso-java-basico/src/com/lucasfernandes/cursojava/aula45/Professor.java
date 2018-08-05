@@ -1,6 +1,6 @@
 package com.lucasfernandes.cursojava.aula45;
 
-public class Professor {
+public class Professor extends Pessoa{
 	
 	private String departamento;
 	private String nomeCurso;

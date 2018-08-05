@@ -1,6 +1,6 @@
 package com.lucasfernandes.cursojava.aula45;
 
-public final class Pessoa {
+public class Pessoa {
 	private String nome;
 	private String endereco;
 	private String telefone;

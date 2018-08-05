@@ -1,6 +1,6 @@
 package com.lucasfernandes.cursojava.aula45;
 
-public class Aluno{
+public class Aluno extends Pessoa{
 	
 	private String[] cursos;
 	private double[][] notas;
